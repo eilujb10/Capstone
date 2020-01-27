@@ -7,6 +7,7 @@ Hex Colors
 html, body, .contentHolder {
   height: 100%;
   margin: 0;
+  font-family: 'Comfortaa', cursive !important;
 }
 footer {
   padding: 15px;
@@ -21,7 +22,7 @@ footer {
 .box {
   display: flex;
   flex: 1;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .flex-row {
   flex-direction: row;
@@ -59,8 +60,15 @@ footer {
   border: 1px solid #fff;
 }
 #logo {
-  flex: 0.5;
+  flex: 0.3;
+  font-size: 1.7em;
+  font-family: 'Kaushan Script', cursive;
+  color: #fff;
+  text-align: center;
+  flex-direction: column;
+  align-self: center;
 }
+
 #nav-list {
   flex-flow: row-reverse;
   padding-right: 5px;

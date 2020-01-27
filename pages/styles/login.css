@@ -21,6 +21,8 @@
 
 /* Button Styling */
 #sign-up-btn {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
   text-align: center;
   align-self: center;
   text-decoration: none;
@@ -37,6 +39,8 @@
   color: #D0224F;
 }
 #login-btn {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2em;
   text-align: center;
   align-self: center;
   text-decoration: none;
@@ -66,14 +70,11 @@
   padding: 8px;
   min-width: -webkit-fill-available;
   margin: 10px 150px;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.1em;
 }
 #title {
   color: #D0224F;
-  font-family: 'Montserrat', sans-serif;
   font-size: 3em;
-  font-weight: bold;
   margin: 35px;
   text-align: center;
 }

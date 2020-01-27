@@ -19,6 +19,8 @@
 
 /* Button Styling */
 #login-btn {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1em;
   text-align: center;
   align-self: center;
   text-decoration: none;
@@ -35,6 +37,8 @@
   color: #00DDED;
 }
 #sign-up-btn {
+  font-family: 'Comfortaa', cursive;
+  font-size: 1.2em; 
   text-align: center;
   align-self: center;
   text-decoration: none;
