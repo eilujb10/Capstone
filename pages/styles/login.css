@@ -1,0 +1,82 @@
+#container {
+  height: 100%;
+}
+
+
+/* Sign Up Area Styling  */
+#sign-up-area {
+  flex: 3;
+  background-color: #D0224F;
+}
+#login-area {
+  flex: 7;
+}
+#img-holder > img {
+  max-width: 100%;
+}
+#info {
+  margin: 30px 10px;
+  padding: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+
+/* Button Styling */
+#sign-up-btn {
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  max-width: fit-content;
+  border: 2px solid #fff;
+  padding: 10px 30px;
+  margin: 20px 30px;
+  color: #fff;
+}
+#sign-up-btn:hover {
+  background-color: #fff;
+  color: #D0224F;
+}
+#login-btn {
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  max-width: fit-content;
+  min-width: -webkit-fill-available;
+  border: 2px solid #D0224F;
+  padding: 10px 30px;
+  margin: 20px 150px;
+  color: #D0224F;
+}
+#login-btn:hover {
+  background-color: #D0224F;
+  color: #fff;
+}
+
+
+/* Login Form Styling */
+#login-area > form {
+  justify-content: center;
+}
+.form-input {
+  padding: 8px;
+  min-width: -webkit-fill-available;
+  margin: 10px 150px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1em;
+}
+#login-area {
+  flex: 7;
+}
+#title {
+  color: #D0224F;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3em;
+  font-weight: bold;
+  margin: 35px;
+  text-align: center;
+}

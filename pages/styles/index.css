@@ -1,0 +1,84 @@
+/* 
+Hex Colors
+*/
+
+
+/* Default Styling */
+html, body, .contentHolder {
+  height: 100%;
+  margin: 0;
+}
+footer {
+  padding: 15px;
+  background-color: #171F28;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: .8em;
+}
+
+
+/* Flex Styling  */
+.box {
+  display: flex;
+  flex: 1;
+  border: 1px solid black;
+}
+.flex-row {
+  flex-direction: row;
+}
+.flex-col {
+  flex-direction: column;
+}
+.center-align {
+  align-items: center;
+}
+
+
+/* Navbar Styling */
+#navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #171F28;
+}
+#navbar > div > li {
+  float: left;
+  padding: 15px;
+  cursor: pointer;
+}
+#navbar > div > li > a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 10px 15px;
+  border: 1px solid #171F28;
+  text-decoration: none;
+}
+#navbar > div > li:hover > a {
+  border: 1px solid #fff;
+}
+#logo {
+  flex: 1;
+}
+
+
+/* Grid Styling */
+.container {
+  max-width: 1335px;
+}
+.grid-row {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.grid-item {
+  text-align: center;
+  flex-basis: 20%;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+  max-width: 280px;
+  max-height: 330px;
+}

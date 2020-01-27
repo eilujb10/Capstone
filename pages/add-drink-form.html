@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Cocktail Lounge</title>
+</head>
+<body>
+  <h1>Add a drink!</h1>
+  <form>
+    <label for="name">Name</label>
+    <input type="text" placeholder="Drink Name" name="name" required>
+    
+    <label>Ingredients List</label>
+    <input type="text" placeholder="Ingredient Name" name="ingredientName">
+    <input type="text" placeholder="Measurement" name="measurement">
+    <select name="measurementType">
+      <option value="cups">Cups</option>
+      <option value="shots">Shots</option>
+    </select>
+
+    <label for="url">Image Url</label>
+    <input type="text" placeholder="Image Url" name="url">
+
+    <label for="tags">Tags</label>
+    <select name="tags">
+      <option value="sweet">Sweet</option>
+      <option value="dry">Dry</option>
+      <option value="light">Light</option>
+      <option value="strong">Strong</option>
+    </select>
+
+    <button type="submit">Add Drink</button>
+  </form>
+</body>
+</html>
