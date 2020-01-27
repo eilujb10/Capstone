@@ -2,11 +2,10 @@
   height: 100%;
 }
 
-
-/* Sign Up Area Styling */
-#sign-up-area {
+/* Login Area Styling */
+#login-area {
   flex: 3;
-  background-color: #D0224F;
+  background-color: #00DDED;
 }
 #img-holder > img {
   max-width: 100%;
@@ -18,9 +17,8 @@
   color: #fff;
 }
 
-
 /* Button Styling */
-#sign-up-btn {
+#login-btn {
   text-align: center;
   align-self: center;
   text-decoration: none;
@@ -32,11 +30,11 @@
   margin: 20px 30px;
   color: #fff;
 }
-#sign-up-btn:hover {
+#login-btn:hover {
   background-color: #fff;
-  color: #D0224F;
+  color: #00DDED;
 }
-#login-btn {
+#sign-up-btn {
   text-align: center;
   align-self: center;
   text-decoration: none;
@@ -44,22 +42,21 @@
   background-color: transparent;
   max-width: fit-content;
   min-width: -webkit-fill-available;
-  border: 2px solid #D0224F;
+  border: 2px solid #00DDED;
   padding: 10px 30px;
   margin: 20px 150px;
-  color: #D0224F;
+  color: #00DDED;
 }
-#login-btn:hover {
-  background-color: #D0224F;
+#sign-up-btn:hover {
+  background-color: #00DDED;
   color: #fff;
 }
 
-
-/* Login Form Styling */
-#login-area {
+/* Sign Up Form Styling */
+#sign-up-area {
   flex: 7;
 }
-#login-area > form {
+#sign-up-area > form {
   justify-content: center;
 }
 .form-input {
@@ -70,7 +67,7 @@
   font-size: 1.1em;
 }
 #title {
-  color: #D0224F;
+  color: #00DDED;
   font-family: 'Montserrat', sans-serif;
   font-size: 3em;
   font-weight: bold;

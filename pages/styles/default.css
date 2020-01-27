@@ -59,7 +59,11 @@ footer {
   border: 1px solid #fff;
 }
 #logo {
-  flex: 1;
+  flex: 0.5;
+}
+#nav-list {
+  flex-flow: row-reverse;
+  padding-right: 5px;
 }
 
 
