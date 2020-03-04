@@ -1,0 +1,35 @@
+doctype
+html.
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script&display=swap" rel="stylesheet">
+    <link href='/styles/default.css', rel='stylesheet'>
+    <link href='/styles/create-account.css', rel='stylesheet'>
+    <title>The Cocktail Lounge</title>
+  </head>
+  <body>
+    <div id="container" class="box flex-row">
+      
+      <div id="sign-up-area" class="box flex-col">
+        <form class="box flex-col">
+          <h1 id="title">Create an Account!</h1>
+          <input id="username" class="form-input" type="text" placeholder="Username" name="username" required>
+          <input id="pass" class="form-input" type="text" placeholder="Password" name="pass" required>
+          <input id="email" class="form-input" type="text" placeholder="Email" name="email" required>
+          <input id="sign-up-btn" type="submit" value="Create Account">
+        </form>
+      </div>
+
+      <div id="login-area" class="box flex-col">
+        <div id="img-holder"><img src="styles/images/cocktails5.jpg"/></div>
+        <p id="info">~ This is an info area ~</p>
+        <a id="login-btn" href="login">Go to Login</a>
+      </div>
+
+    </div>
+
+
+    <script src="/scripts/create-account.js"></script>
+  </body>

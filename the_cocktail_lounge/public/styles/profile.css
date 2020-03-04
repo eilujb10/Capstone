@@ -1,0 +1,27 @@
+#container {
+  min-height: 89%;
+  align-items: center;
+}
+
+/* Profile Info Area */
+#profileInfo {
+  flex: 3;
+  margin: 35px;
+}
+#img-holder > img {
+  max-width: 100%;
+}
+#username {
+  text-align: center;
+}
+
+/* Favorite Drinks Area */
+#listsArea {
+  flex: 7;
+  margin: 35px;
+}
+#favoriteDrinks {
+  min-height: 300px;
+  min-width: 100%;
+  background: rgba(0, 0, 0, 0.1);
+}

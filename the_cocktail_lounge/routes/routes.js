@@ -1,66 +1,114 @@
-let mongourl = 'mongodb+srv://thefoxyninja:P@ssw0rd@mycluster-axnsd.mongodb.net/test';
-let mongoose = require('mongoose');
-let path = require('path');
-mongoose.Promise = global.Promise;
-mongoose.connect(mongourl, {useMongoClient: true});
+const uri = 'mongodb+srv://thefoxyninja:cocktailloungedb@mycluster-axnsd.mongodb.net/test?retryWrites=true&w=majority';
 
-//db connection string = mongodb+srv://thefoxyninja:P@ssw0rd@mycluster-axnsd.mongodb.net/test
+// const MongoClient = require('mongodb').MongoClient;
+// let collection;
+// MongoClient.connect(uri, function(err, client) {
+//   if(err) {
+//     console.log("Error occured while connecting to MongoDB Atlas...\n", err);
+//   }
+//   console.log("CONNECTED...");
+//   collection = client.db("CocktailLoungeDB").collection("Users");
+  
+//   //prints the results of the collection
+//   collection.find().toArray(function(err, result) {
+//     if (err) throw err;
+//       console.log(result);
+//   });
 
-let mdb = mongoose.connection;
-mdb.on('error', console.error.bind(console, 'connection error:'));
-mdb.once('open', function(callback) {
+//   client.close();
+// });
 
+
+const mongoose = require('mongoose');
+mongoose.connect(uri, function(err, res) {
+  if(err) {
+    console.log("THERE IS A PROBLEM WITH MONGODB ATLAS CONNECTION...");
+    console.log(err);
+  } else {
+    console.log("CONNECTED...");
+  }
 });
 
-let userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
   username: String,
   password: String,
-  email: String,
-  likedDrinks: Array,
-  addedDrinks: Array
+  email: String
 });
 
-// let drinkSchema = mongoose.Schema({
-//   name: String,
-//   url: String,
-//   ingredients: Array,
-//   measurements: Array,
-//   tags: Array
-// });
-
-// let ingredientSchema = mongoose.Schema({
-//   name: String,
-//   desc: String
-// });
-
 let User = mongoose.model('Users', userSchema);
-// let Drink = mongoose.model('test2', drinkSchema);
-// let Ingredient = mongoose.model('test3', ingredientSchema);
 
+
+
+
+//Home Page
 exports.index = function(req, res) {
-  res.sendFile(path.join(__dirname + '/../views/index.html'));
-  //res.send("This is the index page");
-  // User.find(function(err, user) {
-  //   if(err) return console.log(err);
-  //   res.render('index', {
-  //     title: "Users List",
-  //     people: users
-  //   });
-  // });
+  res.render('index');
 };
 
+// Login page
 exports.login = function(req, res) {
-  res.sendFile(path.join(__dirname + '/../views/login.html'));
+  res.render('login');
 };
 
+// Creating a user account form
 exports.createAccount = function(req, res) {
-  res.sendFile(path.join(__dirname + '/../views/create-account.html'));
+  res.render('create-account');
 };
 
-exports.profile = function(req, res) {
-  res.sendFile(path.join(__dirname + '/../views/profile.html'));
+// Display drinks and search through them
+exports.search = function(req, res) {
+  res.render('search');
 };
 
+// Display details about specific drink
 exports.drinkDetails = function(req, res) {
-  res.sendFile(path.join(__dirname + '/../views/drink-details.html'));
+  res.render('drink-details');
+};
+
+// Add drink to database
+exports.addDrink = function(req, res) {
+  res.render('add-drink');
+};
+
+// View profile information
+exports.profile = function(req, res) {
+  res.render('profile');
+};
+
+// Review form for a drink
+exports.review = function(req, res) {
+  res.render('review');
+};
+
+
+
+
+
+
+// Testing Displaying Data from DB
+exports.testDisplay = function(req, res) {
+  console.log("This is user test display");
+
+  User.find(function(err, users) {
+    
+    // if (err) return console.error(err);
+    // res.render('test/test-display', {
+    //   users: user
+    // });
+  });
+};
+
+// Testing Adding Data from DB
+exports.testAdd = function(req, res) {
+  res.render('test/test-add');
+};
+
+// Testing Adding Data from DB
+exports.testAddUser = function(req, res) {
+  let user = new User({
+    username: req.body.username,
+    password: req.body.password,
+    email: req.body.email
+  });
+  res.send(`Username =${req.body.username} Password = ${req.body.password} Email = ${req.body.email}`);
 };

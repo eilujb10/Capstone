@@ -1,0 +1,15 @@
+doctype
+html
+  head
+    title Display
+  body
+    table(class='gridtable')
+      tr
+        th Username
+        th Password
+        th Email
+      each item in users
+        tr
+          td #{item.username}
+          td #{item.password}
+          td #{item.email}

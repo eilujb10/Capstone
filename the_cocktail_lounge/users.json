@@ -1,0 +1,30 @@
+[
+  {
+    "id":"0",
+    "username": "TheFoxyNinja",
+    "password": "P@ssw0rd",
+    "email": "jbabylon@thefoxyninja.com",
+    "image": ""
+  },
+  {
+    "id":"1",
+    "username": "GoldenExperience",
+    "password": "ihaveadream",
+    "email": "giogio@gmail.com",
+    "image": ""
+  },
+  {
+    "id":"2",
+    "username": "Alex Alexander",
+    "password": "password",
+    "email": "AlexSquared@yahoo.com",
+    "image": ""
+  },
+  {
+    "id":"3",
+    "username": "NumberOneHero",
+    "password": "plusultra",
+    "email": "AllMight@uahigh.com",
+    "image": ""
+  }
+]
