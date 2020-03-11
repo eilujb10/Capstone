@@ -15,7 +15,6 @@ app.use(bodyParser.urlencoded({extended:true}));
 // })
 
 
-
 app.get('/', route.index);
 app.get('/login', route.login);
 app.get('/create-account', route.createAccount);

@@ -1,5 +1,5 @@
 const uri = 'mongodb+srv://thefoxyninja:cocktailloungedb@mycluster-axnsd.mongodb.net/test?retryWrites=true&w=majority';
-
+let api = require('../public/scripts/api.js');
 // const MongoClient = require('mongodb').MongoClient;
 // let collection;
 // MongoClient.connect(uri, function(err, client) {
