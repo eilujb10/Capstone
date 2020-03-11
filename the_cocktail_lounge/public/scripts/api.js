@@ -24,6 +24,7 @@ exports.getDrinkByFirstLetter = letter => {
   request.onload = () => {
     if (request.status === 200) {
       console.log(JSON.parse(request.responseText));
+      return JSON.parse(request.responseText);
     } else {
       console.log(`error ${request.status} ${request.statusText}`);
     }
@@ -37,6 +38,7 @@ exports.getDrinkByName = name => {
   request.onload = () => {
     if (request.status === 200) {
       console.log(JSON.parse(request.responseText));
+      return JSON.parse(request.responseText);
     } else {
       console.log(`error ${request.status} ${request.statusText}`);
     }
@@ -70,6 +72,7 @@ exports.getDrinkByIngredients = ingredientsList => {
       //   getDrinkInfoById(drinkID);
       // }
       console.log(JSON.parse(request.responseText));
+      return JSON.parse(request.responseText);
     } else {
       console.log(`error ${request.status} ${request.statusText}`);
     }
@@ -85,6 +88,7 @@ exports.getAllAlcoholic = () => {
   request.onload = () => {
     if (request.status === 200) {
       console.log(JSON.parse(request.responseText));
+      return JSON.parse(request.responseText);
     } else {
       console.log(`error ${request.status} ${request.statusText}`);
     }
@@ -99,6 +103,7 @@ exports.getAllNonAlcoholic = () => {
   request.onload = () => {
     if (request.status === 200) {
       console.log(JSON.parse(request.responseText));
+      return JSON.parse(request.responseText);
     } else {
       console.log(`error ${request.status} ${request.statusText}`);
     }
@@ -112,6 +117,7 @@ exports.getRandomDrinks = () => {
   request.onload = () => {
     if (request.status === 200) {
       console.log(JSON.parse(request.responseText));
+      return JSON.parse(request.responseText);
     } else {
       console.log(`error ${request.status} ${request.statusText}`);
     }

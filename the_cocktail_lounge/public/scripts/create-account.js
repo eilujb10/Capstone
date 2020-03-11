@@ -1,1 +1,1 @@
-console.log("This is the create account script!");
+console.log("Create Account Script!");

@@ -1,9 +1,13 @@
 doctype
+script
+  include ../public/scripts/drink-search.js
+  //- include ../public/scripts/api.js
 html.
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/a935b82506.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Comfortaa|Kaushan+Script&display=swap" rel="stylesheet">
     <link href='/styles/default.css', rel='stylesheet'>
 
@@ -20,6 +24,13 @@ html.
         <li><a href="/">Home</a></li>
       </div>
     </ul>
-    
-    <h1>Search Drinks Page</h1>
+    <div id="wrapper" class="box flex-col">
+      <div id="inputArea" class="box flex-row">
+          <input type="text" name="drinkName" id="drinkName" placeholder="Search for drink..."><br/>
+          <button id="submitBtn" type="submit"><i id='search' class="fas fa-search"></i></button>
+      </div>
+      <div id='drinksArea' class='container'>
+          <div class='grid-row'></div>
+      </div>
+    </div>
   </body>

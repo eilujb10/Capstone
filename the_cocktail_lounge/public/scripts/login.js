@@ -1,4 +1,4 @@
-console.log("This is the login script!");
+console.log("Login Script!");
 
 function validate(){
   let errors=false;
